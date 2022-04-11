@@ -84,6 +84,7 @@
 		4360135827FB478900992315 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				436D904928045F6600D42729 /* Sneakers */,
 				43DC98DA27FB327B005FCADA /* ContentView.swift */,
 			);
 			path = Views;
@@ -113,6 +114,13 @@
 				436D9047280458BA00D42729 /* ImagePicker.swift */,
 			);
 			path = Camera;
+			sourceTree = "<group>";
+		};
+		436D904928045F6600D42729 /* Sneakers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sneakers;
 			sourceTree = "<group>";
 		};
 		43DC98CC27FB327B005FCADA = {
