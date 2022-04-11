@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4360135A27FB578100992315 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4360135927FB578100992315 /* CameraView.swift */; };
 		436D903E27FD7BA000D42729 /* Sneaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D903D27FD7BA000D42729 /* Sneaker.swift */; };
 		436D904027FD7EFF00D42729 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D903F27FD7EFF00D42729 /* User.swift */; };
 		436D904327FD94C300D42729 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D904227FD94C300D42729 /* WeatherModel.swift */; };
 		436D904527FD951E00D42729 /* WeatherAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D904427FD951E00D42729 /* WeatherAPIClient.swift */; };
+		436D9048280458BA00D42729 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D9047280458BA00D42729 /* ImagePicker.swift */; };
 		43DC98D927FB327B005FCADA /* clean_shoesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DC98D827FB327B005FCADA /* clean_shoesApp.swift */; };
 		43DC98DB27FB327B005FCADA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DC98DA27FB327B005FCADA /* ContentView.swift */; };
 		43DC98DD27FB327C005FCADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43DC98DC27FB327C005FCADA /* Assets.xcassets */; };
@@ -39,11 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4360135927FB578100992315 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = "clean-shoes/CameraView.swift"; sourceTree = SOURCE_ROOT; };
 		436D903D27FD7BA000D42729 /* Sneaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sneaker.swift; sourceTree = "<group>"; };
 		436D903F27FD7EFF00D42729 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		436D904227FD94C300D42729 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		436D904427FD951E00D42729 /* WeatherAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIClient.swift; sourceTree = "<group>"; };
+		436D9047280458BA00D42729 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		43DC98D527FB327B005FCADA /* clean-shoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "clean-shoes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43DC98D827FB327B005FCADA /* clean_shoesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clean_shoesApp.swift; sourceTree = "<group>"; };
 		43DC98DA27FB327B005FCADA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,11 +107,17 @@
 			path = WeatherAPIClient;
 			sourceTree = "<group>";
 		};
+		436D9046280458AE00D42729 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				436D9047280458BA00D42729 /* ImagePicker.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		43DC98CC27FB327B005FCADA = {
 			isa = PBXGroup;
 			children = (
-				436D904127FD948800D42729 /* WeatherAPIClient */,
-				436D903C27FD7B6300D42729 /* Models */,
 				43DC98D727FB327B005FCADA /* clean-shoes */,
 				43DC98E827FB327C005FCADA /* clean-shoesTests */,
 				43DC98F227FB327C005FCADA /* clean-shoesUITests */,
@@ -132,7 +138,9 @@
 		43DC98D727FB327B005FCADA /* clean-shoes */ = {
 			isa = PBXGroup;
 			children = (
-				4360135927FB578100992315 /* CameraView.swift */,
+				436D9046280458AE00D42729 /* Camera */,
+				436D904127FD948800D42729 /* WeatherAPIClient */,
+				436D903C27FD7B6300D42729 /* Models */,
 				4360135827FB478900992315 /* Views */,
 				43DC98D827FB327B005FCADA /* clean_shoesApp.swift */,
 				43DC98DC27FB327C005FCADA /* Assets.xcassets */,
@@ -296,11 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4360135A27FB578100992315 /* CameraView.swift in Sources */,
 				436D903E27FD7BA000D42729 /* Sneaker.swift in Sources */,
 				43DC98DB27FB327B005FCADA /* ContentView.swift in Sources */,
 				436D904027FD7EFF00D42729 /* User.swift in Sources */,
 				436D904327FD94C300D42729 /* WeatherModel.swift in Sources */,
+				436D9048280458BA00D42729 /* ImagePicker.swift in Sources */,
 				43DC98D927FB327B005FCADA /* clean_shoesApp.swift in Sources */,
 				436D904527FD951E00D42729 /* WeatherAPIClient.swift in Sources */,
 			);
@@ -389,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -443,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -461,6 +469,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"clean-shoes/Preview Content\"";
+				DEVELOPMENT_TEAM = 6K83V6KDCP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
@@ -493,6 +502,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"clean-shoes/Preview Content\"";
+				DEVELOPMENT_TEAM = 6K83V6KDCP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";

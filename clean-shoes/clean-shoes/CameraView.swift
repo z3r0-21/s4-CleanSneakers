@@ -35,7 +35,7 @@ struct CameraView: UIViewControllerRepresentable {
 extension CameraView {
     class Coordinator : NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
         var parent: CameraView
-        var image = Image("")
+        var image = UIImage?
         
         init(_ parent: CameraView) {
             self.parent = parent        }
@@ -45,11 +45,11 @@ extension CameraView {
         }
         
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-            if let image = info[UIImagePickerController.InfoKey.originalImage] as? Image {
-                self.image = image
+            if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+                //self.image = image
                 
                 //saves  taken photo yo gallery
-                //UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+                UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
             }
         }
     }

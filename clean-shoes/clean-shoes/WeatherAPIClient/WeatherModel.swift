@@ -83,3 +83,10 @@ enum WeatherCode: String, Codable {
         }
     }
 }
+
+//Updates the UI every time data changes
+struct Weather: Identifiable {
+    let id = UUID()
+    
+    let weatherCode: WeatherCode
+}
