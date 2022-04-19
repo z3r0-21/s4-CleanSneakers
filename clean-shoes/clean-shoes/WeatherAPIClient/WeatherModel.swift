@@ -70,15 +70,15 @@ enum WeatherCode: String, Codable {
     var description: String {
         switch self {
         case .clear, .mostlyClear:
-            return ""
+            return "message"
         case .partlyCloudy, .mostlyCloudy, .cloudy, .fog, .lightFog:
-            return ""
+            return "message"
         case .lightWind, .wind, .strongWind:
-            return ""
+            return "message"
         case .drizzle, .rain, .lightRain, .heavyRain, .thunderstorm:
-            return ""
+            return "message"
         case .snow, .flurries, .lightSnow, .heavySnow, .freezingDrizzle, .freezingRain, .lightFreezingRain, .heavyFreezingRain, .icePellets, .heavyIcePellets, .lightIcePellets:
-            return ""
+            return "message"
 
         }
     }

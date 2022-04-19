@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "air-jordan-1-mid-banned-2020-gs-554725-074_1_pdsa9n_1800x1800_1e730f76-f3ed-45fc-9693-8b51a6adc868_1800x1800.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

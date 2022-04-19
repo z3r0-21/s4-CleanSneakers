@@ -12,6 +12,14 @@
 		436D904327FD94C300D42729 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D904227FD94C300D42729 /* WeatherModel.swift */; };
 		436D904527FD951E00D42729 /* WeatherAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D904427FD951E00D42729 /* WeatherAPIClient.swift */; };
 		436D9048280458BA00D42729 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D9047280458BA00D42729 /* ImagePicker.swift */; };
+		436D904B280472D700D42729 /* SneakerTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D904A280472D700D42729 /* SneakerTile.swift */; };
+		436D904D2804753B00D42729 /* FakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D904C2804753B00D42729 /* FakeData.swift */; };
+		436D904F2806ADEA00D42729 /* NewSneaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D904E2806ADEA00D42729 /* NewSneaker.swift */; };
+		436D9053280D9B4100D42729 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D9052280D9B4100D42729 /* ImageController.swift */; };
+		436D9055280DB60000D42729 /* SneakersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D9054280DB60000D42729 /* SneakersList.swift */; };
+		436D9057280DDB8200D42729 /* TodayForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D9056280DDB8200D42729 /* TodayForecast.swift */; };
+		436D9060280E2E5300D42729 /* WeeklyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D905F280E2E5300D42729 /* WeeklyForecast.swift */; };
+		436D9062280E331600D42729 /* WeekDayTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D9061280E331600D42729 /* WeekDayTile.swift */; };
 		43DC98D927FB327B005FCADA /* clean_shoesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DC98D827FB327B005FCADA /* clean_shoesApp.swift */; };
 		43DC98DB27FB327B005FCADA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DC98DA27FB327B005FCADA /* ContentView.swift */; };
 		43DC98DD27FB327C005FCADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43DC98DC27FB327C005FCADA /* Assets.xcassets */; };
@@ -44,6 +52,14 @@
 		436D904227FD94C300D42729 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		436D904427FD951E00D42729 /* WeatherAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIClient.swift; sourceTree = "<group>"; };
 		436D9047280458BA00D42729 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		436D904A280472D700D42729 /* SneakerTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakerTile.swift; sourceTree = "<group>"; };
+		436D904C2804753B00D42729 /* FakeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeData.swift; sourceTree = "<group>"; };
+		436D904E2806ADEA00D42729 /* NewSneaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSneaker.swift; sourceTree = "<group>"; };
+		436D9052280D9B4100D42729 /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
+		436D9054280DB60000D42729 /* SneakersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakersList.swift; sourceTree = "<group>"; };
+		436D9056280DDB8200D42729 /* TodayForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayForecast.swift; sourceTree = "<group>"; };
+		436D905F280E2E5300D42729 /* WeeklyForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyForecast.swift; sourceTree = "<group>"; };
+		436D9061280E331600D42729 /* WeekDayTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayTile.swift; sourceTree = "<group>"; };
 		43DC98D527FB327B005FCADA /* clean-shoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "clean-shoes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43DC98D827FB327B005FCADA /* clean_shoesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clean_shoesApp.swift; sourceTree = "<group>"; };
 		43DC98DA27FB327B005FCADA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,8 +100,9 @@
 		4360135827FB478900992315 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				436D904928045F6600D42729 /* Sneakers */,
 				43DC98DA27FB327B005FCADA /* ContentView.swift */,
+				436D905C280E2D4500D42729 /* Forecast */,
+				436D904928045F6600D42729 /* Sneakers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -95,6 +112,7 @@
 			children = (
 				436D903D27FD7BA000D42729 /* Sneaker.swift */,
 				436D903F27FD7EFF00D42729 /* User.swift */,
+				436D904C2804753B00D42729 /* FakeData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,6 +129,7 @@
 		436D9046280458AE00D42729 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				436D9052280D9B4100D42729 /* ImageController.swift */,
 				436D9047280458BA00D42729 /* ImagePicker.swift */,
 			);
 			path = Camera;
@@ -119,8 +138,21 @@
 		436D904928045F6600D42729 /* Sneakers */ = {
 			isa = PBXGroup;
 			children = (
+				436D904A280472D700D42729 /* SneakerTile.swift */,
+				436D9054280DB60000D42729 /* SneakersList.swift */,
+				436D904E2806ADEA00D42729 /* NewSneaker.swift */,
 			);
 			path = Sneakers;
+			sourceTree = "<group>";
+		};
+		436D905C280E2D4500D42729 /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				436D9056280DDB8200D42729 /* TodayForecast.swift */,
+				436D905F280E2E5300D42729 /* WeeklyForecast.swift */,
+				436D9061280E331600D42729 /* WeekDayTile.swift */,
+			);
+			path = Forecast;
 			sourceTree = "<group>";
 		};
 		43DC98CC27FB327B005FCADA = {
@@ -312,13 +344,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				436D904D2804753B00D42729 /* FakeData.swift in Sources */,
 				436D903E27FD7BA000D42729 /* Sneaker.swift in Sources */,
+				436D9062280E331600D42729 /* WeekDayTile.swift in Sources */,
 				43DC98DB27FB327B005FCADA /* ContentView.swift in Sources */,
 				436D904027FD7EFF00D42729 /* User.swift in Sources */,
+				436D904B280472D700D42729 /* SneakerTile.swift in Sources */,
+				436D9055280DB60000D42729 /* SneakersList.swift in Sources */,
 				436D904327FD94C300D42729 /* WeatherModel.swift in Sources */,
+				436D9053280D9B4100D42729 /* ImageController.swift in Sources */,
 				436D9048280458BA00D42729 /* ImagePicker.swift in Sources */,
 				43DC98D927FB327B005FCADA /* clean_shoesApp.swift in Sources */,
+				436D904F2806ADEA00D42729 /* NewSneaker.swift in Sources */,
+				436D9060280E2E5300D42729 /* WeeklyForecast.swift in Sources */,
 				436D904527FD951E00D42729 /* WeatherAPIClient.swift in Sources */,
+				436D9057280DDB8200D42729 /* TodayForecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,8 +10,10 @@ import SwiftUI
 import CoreLocation
 
 struct Sneaker: Hashable, Codable, Identifiable{
-    var id: Int
+    var id: String
+    
     var name: String
+    var weatherTypes: [Category]
     
     enum Category: String, CaseIterable, Codable{
         case rain = "Rain"
@@ -19,8 +21,31 @@ struct Sneaker: Hashable, Codable, Identifiable{
         case snow = "Snow"
     }
     
-    private var imageName: String
-    var image: Image{
-        Image("\(self.name) (ID: \(self.id))")
+//    var imageName: String
+//    var image: Image{
+//        Image(imageName)
+//    }
+    
+    var imageId: String
+    
+    
+    init(name: String, weather:[Category], image: String) {
+        self.id = UUID().uuidString
+        self.name = name
+        self.weatherTypes = []
+        //self.imageName = "Attached image for \(name)"
+        self.imageId = image
+        weather.forEach { weather in
+            weatherTypes.append(weather)
+        }
+    }
+    
+    func getImgae() -> UIImage?{
+        if let imageData = UserDefaults.standard.object(forKey: imageId) as? Data,
+            let image = UIImage(data: imageData) {
+            return image
+        }
+        let def = UIImage(named: "general-sneakers")
+        return def
     }
 }

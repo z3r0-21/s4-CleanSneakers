@@ -12,13 +12,6 @@ import CoreLocation
 struct User: Hashable, Codable, Identifiable{
     var id: Int
     var firstName: String
-    var manualLocation: Bool = false
-    var sneakers = [Sneaker]()
-    
-    private var imageName: String
-    var image: Image{
-        Image("User with ID: \(self.id)")
-    }
     
     private var coordinates: Coordinates
     var selectedLocationCoordinates: CLLocationCoordinate2D{
@@ -32,5 +25,9 @@ struct User: Hashable, Codable, Identifiable{
         var longitude: Double
     }
     
-    
+    init(id: Int, fName: String, lat: Double, long: Double) {
+        self.id = id
+        self.firstName = fName
+        self.coordinates = Coordinates(latitude: lat, longitude: long)
+    }
 }
