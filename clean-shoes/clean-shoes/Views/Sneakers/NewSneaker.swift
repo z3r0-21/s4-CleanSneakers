@@ -36,7 +36,7 @@ var body: some View {
                     .frame(width: 300, height: 225)
             }
             HStack{
-                Button("Take picutre") {
+                Button("Take picture") {
                     self.isImagePickerDisplay.toggle()
                     self.sourceType = .camera
                 }
@@ -97,6 +97,7 @@ var body: some View {
                 sunny = false
                 rain = false
                 snow = false
+                selectedImage = nil
             }
             
 

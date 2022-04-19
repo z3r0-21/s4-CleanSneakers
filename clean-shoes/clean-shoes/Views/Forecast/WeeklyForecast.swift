@@ -19,6 +19,7 @@ struct WeeklyForecast: View {
     var seventh = Calendar.current.date(byAdding: .day, value: 7, to: Date())!
     
     var weather = ["1000", "1000", "1000", "4001", "4001", "5000", "5000"]
+    
     var dates: [Date] { return [first, second, third, fourth, fifth, sixth, seventh] }
 
     var body: some View {
